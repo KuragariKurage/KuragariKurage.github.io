@@ -16,6 +16,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 375px;
+  }
+}
+
 header {
   background-color: #75C3C9;
   background-size: cover;
@@ -124,7 +130,7 @@ footer h3 {
 
 @media screen and (max-width: 414px) {
   footer h3 {
-    font-size: 6px;
+    font-size: 10.5px;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */
