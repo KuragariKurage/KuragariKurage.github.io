@@ -10,6 +10,12 @@ body {
   width: 520px;
 }
 
+@media screen and (max-width: 400px) {
+  .container {
+    width: 250px;
+  }
+}
+
 header {
   background-color: #75C3C9;
   background-size: cover;
@@ -34,6 +40,19 @@ header h1 {
   color: #fff;
 }
 
+@media screen and (max-width: 400px) {
+  header {
+    height: 250px;
+  }
+  header .header-icon {
+    width: 90px;
+    height: 90px;
+  }
+  header h1 {
+    font-size: 36px;
+  }
+}
+
 header p {
   margin-top: 5px;
   color: #888888;
@@ -52,6 +71,15 @@ header p {
 .content-wrapper p {
   font-size: 16px;
   margin: 3px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .content-wrapper h2 {
+    font-size: 20px;
+  }
+  .content-wrapper p {
+    font-size: 12px;
+  }
 }
 
 .sns-wrapper {
@@ -78,9 +106,10 @@ header p {
 
 .sns-wrapper .link-icon a {
   display: block;
-  padding: 0 10px;
   font-size: 36px;
   color: #fff;
+  text-align: center;
+  line-height: 60px;
 }
 
 footer {
@@ -91,5 +120,11 @@ footer h3 {
   font-size: 12px;
   font-weight: lighter;
   color: #888;
+}
+
+@media screen and (max-width: 400px) {
+  footer h3 {
+    font-size: 6px;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */

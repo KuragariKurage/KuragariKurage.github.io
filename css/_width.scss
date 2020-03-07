@@ -1,0 +1,25 @@
+$breakpoints: ('sm': 'screen and (max-width: 400px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin responsive($class, $bp: $breakpoints) {
+    #{$class} {
+        @content;
+    }
+
+    @each $suffix,
+    $value in $bp {
+        @media #{$value} {
+            #{$class}-#{$suffix} {
+                @content;
+            }
+        }
+    }
+}
