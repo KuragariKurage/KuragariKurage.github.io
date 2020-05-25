@@ -80,6 +80,19 @@ header p {
   margin: 3px 0;
 }
 
+.content-wrapper a {
+  color: #7BB1C9;
+  text-decoration: none;
+}
+
+.content-wrapper a:visited {
+  color: #c2c2c2;
+}
+
+.content-wrapper a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 414px) {
   .content-wrapper h2 {
     font-size: 22px;
@@ -119,11 +132,18 @@ header p {
   color: #fff;
   text-align: center;
   line-height: 60px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .sns-wrapper .link-icon:hover {
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+}
+
+.sns-wrapper .link-icon:hover a {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
